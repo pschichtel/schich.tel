@@ -1,1 +1,4 @@
-GET / controllers.Application.index
+GET /               controllers.Application.index
+GET /view/:name     controllers.Application.show(name: String)
+
+GET /assets/*file   controllers.Assets.at(path="/public", file)

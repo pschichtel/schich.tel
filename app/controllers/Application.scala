@@ -1,11 +1,18 @@
 package controllers
 
-import play.api.mvc._
+import javax.inject.Inject
 
-class Application extends Controller {
+import play.api.mvc._
+import service.ResumeService
+
+class Application @Inject() (resumeService: ResumeService) extends Controller {
 
     def index = Action { implicit request =>
-        Ok("Hello World").as("text/plain")
+      Ok(views.html.select())
+    }
+
+    def show(name: String) = Action { implicit request =>
+        Ok(views.html.view(resumeService.getResumeFor(name)))
     }
 
 }

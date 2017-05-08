@@ -1,0 +1,50 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Arial, sans-serif;
+  background-color: #DDD;
+}
+
+body > div {
+  width: 60%;
+  min-width: 400px;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 1cm auto;
+  font-size: 24px;
+  overflow: hidden;
+}
+
+body > div > h1 {
+  text-align: center;
+}
+
+body > div > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body > div > ul > li {
+  display: block;
+}
+
+body > div > ul > li > a {
+  display: block;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  color: black;
+}
+
+body > div > ul > li > a:hover {
+  background-color: yellow;
+  text-decoration: underline;
+}
+
+body > div > ul > li > a > span {
+  display: none;
+}
+
+body > div > ul > li > a:hover > span {
+  display: inline;
+}
