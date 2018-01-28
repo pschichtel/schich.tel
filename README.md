@@ -1,3 +1,3 @@
 # schich.tel
 
-https://schich.tel
+http://schich.tel
